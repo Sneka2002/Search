@@ -1,0 +1,264 @@
+search.jsx
+
+
+import React from 'react';
+// import 'C:\\Users\\schandras5\\sample\\src\\App.css'
+import "./search.css"
+const Search = () => {
+  return (
+    <div className="user-profile">
+      <div className="profile-header">
+        {/* <img src="./profilecircle.png" alt="Logo" className="logo" /> */}
+        <input type="text" placeholder="Search" className="search-bar" />
+      </div>
+
+      <div className="container">
+      <div className="user-details">
+        <div className="detail profile-info">
+          <label>Name:</label>
+          <span>__________</span>
+        </div>
+        <div className="detail">
+          <label>Location:</label>
+          <span>____________</span>
+        </div>
+      
+      <div className="download-button">
+        <label> Medical Prescription:</label>
+        <button>Download as PDF</button>
+        <div className="profile-info">
+        <img src="./profile logo.jpg" alt="Profile" className="profile-image" />
+        <button className="view-profile-button">View Profile</button>
+      </div>
+      </div>
+      </div>
+
+      <div className="user-details">
+        <div className="detail profile-info">
+          <label>Name:</label>
+          <span>__________</span>
+        </div>
+        <div className="detail">
+          <label>Location:</label>
+          <span>____________</span>
+        </div>
+      
+      <div className="download-button">
+        <label> Medical Prescription:</label>
+        <button>Download as PDF</button>
+      </div>
+      </div>
+      <div className="profile-info profile">
+        {/* <img src="./profile logo.jpg" alt="Profile" className="profile-image" /> */}
+        <button className="view-profile-button">View Profile</button>
+      </div>
+    </div> 
+    </div>
+  );
+};
+
+export default Search;
+
+
+App.css
+
+.nav-bar {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  align-self: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+.nav-logo h1 {
+    font-weight: 600;
+}
+
+.loggedin-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loggedin-user p {
+    font-weight: 600;
+
+}
+.user-profile {
+  background-image: linear-gradient(#f778be, #ece6dc, #ece6dc, #ffffff);
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.profile-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.search-bar {
+  /*padding: 20px;
+  border: none;
+  border-radius: 50px;
+  width: 70%;
+  outline: none;
+  margin: auto;*/
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 40%;
+  height: 10px;
+  position: center;
+  transform: translate(75%, 75%);
+}
+
+/* .user-details {
+  margin: 30px 0;
+} */
+
+/* .detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+} */
+/* 
+label {
+  font-weight: bold;
+  margin-right: 10px;
+} */
+
+.users {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+
+.profile-section {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.user-profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.download-btn{
+    background-color: #f778be;
+    color: rgb(14, 3, 3);
+    border: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+
+/* .detail {
+    display: flex;
+    align-items: center;
+  } */
+  
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 5%;
+  padding: 5px;
+  position:relative;
+  top:20px;
+  right: 400px;
+  transform: translate(200%, 200%);
+}
+
+/* .profile-info{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+} */
+.view-profile-button {
+  /*background-color: #f778be;
+  width: 100%;
+  color: rgb(14, 3, 3);
+  border: none;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 5px;*/
+  background-color: #f778be;
+  color: rgb(14, 3, 3);
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  transform: translate(30%, 200%);
+  position: relative;
+  right:200px;
+  top: 90px;
+}
+
+
+Seach.css
+
+ .container{
+        display: flex;
+        justify-content: space-between; /* Spacing between the cards */
+        margin: 20px; /* Optional margin for the container */
+}
+.user-details
+{
+    display: flex;
+    flex: 2; /* Cards take equal width */
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px; /* Spacing between cards */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+} 
+
+
+App.js
+
+import React from 'react';
+import Search from './search';
+import 'C:\\Users\\schandras5\\sample\\src\\App.css';
+function App() {
+  return (
+    <div className="App">
+      <Search />
+    </div>
+  );
+}
+
+export default App;
